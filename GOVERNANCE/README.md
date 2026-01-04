@@ -4,6 +4,7 @@
 
 ## 構成
 - `MASTER_PROTOCOL_TEMPLATE.md`: 最上位プロトコル（Canonical）
+- `AI_INSTRUCTIONS.md`: 実装AI向けの厳格な指示書・行動規範
 - `REVIEW_PACKET_TEMPLATE.md`: Phase 2.5 独立レビュー用のパケット雛形
 - `spec/`: Phase 別の Canonical 仕様書格納先
 - `review_packets/`: 送出・受理されたレビューパケットの記録（任意）
