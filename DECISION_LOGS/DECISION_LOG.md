@@ -34,4 +34,18 @@ Add new decisions at the bottom only.
 
 ---
 
+## Entry 0003
+- Date: 2026-01-04
+- Phase: Assetization / Polishing
+- Verdict: Hardened Hygiene Verification
+- Severity: Low
+- Reason:
+  検証手順の信頼性を高めるため、`git ls-files` をベースとした Git 管理下ファイルのみを対象とする手法へ移行。また、`.gemini` や `.resolved` などのチャット履歴由来の疑似パス混入も検知対象に追加し、不確実な「結果断言」を排除した挙動説明へ修正。
+- Reference:
+  - walkthrough.md
+- Diff:
+  - N/A
+
+---
+
 (Entries continue below)
