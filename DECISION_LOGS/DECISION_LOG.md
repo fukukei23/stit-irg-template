@@ -20,4 +20,18 @@ Add new decisions at the bottom only.
 
 ---
 
+## Entry 0002
+- Date: 2026-01-04
+- Phase: Assetization / Polishing
+- Verdict: Standardized PowerShell Verification
+- Severity: Low
+- Reason:
+  Windows環境での再現性を担保するため、ドキュメント上の検証手順を `rg` から PowerShell 拡張の `Select-String` へ変更。また、`.gemini` 等の例示パスが実在ファイルでないことを明文化した。
+- Reference:
+  - walkthrough.md
+- Diff:
+  - N/A
+
+---
+
 (Entries continue below)
