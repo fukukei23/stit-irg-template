@@ -48,4 +48,19 @@ Add new decisions at the bottom only.
 
 ---
 
+## Entry 0004
+- Date: 2026-01-04
+- Phase: Publication / Final Fixation
+- Verdict: GitHub Template Repository Readiness
+- Severity: Low
+- Reason:
+  GitHub でのパブリック公開（Template Repository）に向け、MIT ライセンスの追加、README の英語化、および日本語版の待避（README_JA.md）を実施。これにより、グローバルな小規模 AI 開発チームが即座に「STIT+IRG」統治を導入可能となった。
+- Reference:
+  - README.md
+  - LICENSE
+- Diff:
+  - N/A
+
+---
+
 (Entries continue below)

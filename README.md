@@ -1,66 +1,69 @@
-# AI Development Protocol（設計憲法レジストリ）
+# STIT+IRG Governance Registry
 
-## これは何か
-
-このリポジトリは、**「Spec & Test Driven Iteration + Phase 2.5 Independent Review Gate」** をプロジェクトの大小によらず標準化するための **テンプレリポジトリ** である。
-
-- 開発を開始する前に必ず本レジストリの内容を参照する
-- 「推測を排除し、仕様とテストで開発を回す」ことを強制する
-- 全文書の参照は **リポジトリ相対パス** で行うこと（絶対パス禁止）
+**Spec & Test Driven Iteration + Independent Review Gate (STIT+IRG)**  
+A governance-first template repository for AI-driven software development.
 
 ---
 
-## フォルダ構成と Canonical Paths
+## What this is
 
-### [GOVERNANCE/](./GOVERNANCE/)
-- **[MASTER_PROTOCOL_TEMPLATE.md](./GOVERNANCE/MASTER_PROTOCOL_TEMPLATE.md)** (Canonical)
-  - すべての開発に共通する最上位プロトコル（仕様駆動・テスト先行）
-- **[REVIEW_PACKET_TEMPLATE.md](./GOVERNANCE/REVIEW_PACKET_TEMPLATE.md)**
-  - Phase 2.5 独立レビュー用の指示書雛形
-- **[spec/](./GOVERNANCE/spec/)** (Canonical Spec Location)
-  - 各プロジェクトの最新仕様書（Phase別）はここに集約する
-  - 旧 `docs/spec/` 等にファイルがある場合は「Superseded」注記を入れてここへ誘導すること
+This repository is **not a software product**.
 
-### [ARCHITECTURE.md](./ARCHITECTURE.md) (Gate Entrypoint)
-- 各プロジェクトの設計図への入口
-- 実装開始前に必ず参照すべき **Gate の要石**
+It is a **governance template** that defines:
+- How specifications are written
+- How implementations are reviewed
+- How AI is constrained
+- How decisions are logged and audited
 
-### [PROJECT_PROFILES/](./PROJECT_PROFILES/)
-- プロジェクト固有の前提条件（Phase 0 成果物）
-
-### [ARCHITECTURES/](./ARCHITECTURES/)
-- プロジェクト別の詳細設計図（[ARCHITECTURE_TEMPLATE.md](./ARCHITECTURES/ARCHITECTURE_TEMPLATE.md) を使用）
-
-### [DECISION_LOGS/](./DECISION_LOGS/)
-- 判断・失敗・却下理由を記録する **不変のログ**
+The goal is to prevent:
+- Silent requirement drift
+- Self-justifying AI implementations
+- Unsafe or irreversible changes
+- Undocumented architectural decisions
 
 ---
 
-## 運用フロー（STIT + IRG）
+## Core Principles
 
-以下の手順（Phase 1 → 2 → 2.5 → 4）を最短フローとする。
-
-1. **Phase 1: Spec & Test Definition**
-   - 仕様書を [GOVERNANCE/spec/](./GOVERNANCE/spec/) に作成し、テストコードを定義する
-2. **Phase 2: Implementation**
-   - 仕様とテストを満たす実装を行う
-3. **Phase 2.5: Independent Review Gate (IRG)**
-   - **必須条件**: 開発環境から切り離された **別コンテキスト（新規チャット等）** で外部 AI (ChatGPT/Claude等) にレビューさせる
-   - **IDE 内自己チェックは無効**: カーソル等の自己チェックはこのフェーズに該当しない
-   - `REVIEW_PACKET_TEMPLATE.md` を使用して指示を投げる
-4. **Phase 4: Merge & Assetization**
-   - レビュー結果を `DECISION_LOGS/` に転記し、設計資産として固定する
+1. **Specification before implementation**
+2. **Independent review is mandatory (Phase 2.5)**
+3. **IDE self-checks do NOT count as reviews**
+4. **Git is the Single Source of Truth**
+5. **Every major decision is logged**
 
 ---
 
-## 重要なルール
+## Repository Structure (Canonical)
 
-- **推測禁止**: 不明点は必ず言語化し、情報を提示させてから進める
-- **絶対パス禁止**: ローカルや環境固有の絶対パスはリンク切れの原因となるため、すべてリポジトリ相対パスで記述する
-- **独立レビュー必須**: 第三者（AI）の視点による検証なしに Phase 4 に進んではならない
+```text
+ARCHITECTURE.md  # Governance Gate Entrypoint (SSOT)
+README.md        # This document
+README_JA.md     # Japanese version
+GOVERNANCE/      # Protocols & AI rules
+ARCHITECTURES/   # Architecture templates
+DECISION_LOGS/   # Append-only decision records
+PROJECT_PROFILES/ # Project-specific constraints
+```
 
 ---
 
-## このフォルダの位置づけ
+## How to use this template
 
-本レジストリは **すべてのソースコード、すべてのツールより上位** に位置する設計憲法である。ここに書かれたルールを遵守できない場合、その開発を開始してはならない。
+1. Click **Use this template** on GitHub
+2. Create your own project repository
+3. Define your project in `PROJECT_PROFILES/`
+4. Update `ARCHITECTURE.md`
+5. Start from Phase 1 (Specification)
+
+---
+
+## Mandatory Rule
+
+You may NOT proceed past Phase 2 unless Phase 2.5  
+(**Independent Review in a separate AI context**) is completed and logged.
+
+---
+
+## License
+
+MIT License
