@@ -1,5 +1,11 @@
 # PROJECT_PROFILE_BUYMA.md
+
 ## Project Profile（Phase 0 / 必須）
+
+> NOTE:
+> This document is a historical example for the BUYMA project.
+> Downstream projects MUST define their own PROJECT_PROFILE_<PROJECT>.md.
+> This file MUST NOT be treated as a global or default project profile.
 
 Version: 0.2.0  
 LastUpdated: YYYY-MM-DD  
@@ -96,7 +102,7 @@ ArchitectureRef:
   - LLM補助による情報整理
 - スクレイピング導入は **Phase 1 以降の別仕様**として扱う
 
-※ ChatGPT等のエージェントモードを用いた取得も、
+※ ChatGPT等のエージェントモードを用いた取得も、  
 　本質的にはスクレイピングとして同等のリスクを持つと認識する。
 
 ---
@@ -155,5 +161,3 @@ ArchitectureRef:
 - 安定性・停止安全性を最優先
 - 自動化は段階的に攻める
 - 推測はしない。決めたことだけを守る
-
----
