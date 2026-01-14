@@ -2,18 +2,20 @@
 
 ## Project Profile（Phase 0 / 必須）
 
-> NOTE:
-> This document is a historical example for the BUYMA project.
-> Downstream projects MUST define their own PROJECT_PROFILE_<PROJECT>.md.
-> This file MUST NOT be treated as a global or default project profile.
+> [!IMPORTANT]
+> **THIS IS AN EXAMPLE ONLY.**
+> This file represents the historical profile for the BUYMA project.
+> It MUST NOT be used as a default or base for other projects.
+> Create your project-specific profile using [PROJECT_PROFILE_TEMPLATE.md](./PROJECT_PROFILE_TEMPLATE.md) instead.
 
 Version: 0.2.0  
 LastUpdated: YYYY-MM-DD  
 
 ArchitectureRef:
-  - File: ../ARCHITECTURES/ARCHITECTURE_BUYMA.md
-  - Version: 1.0.0
-  - Commit: 451f92adf8c6f74f8614296635b3161433677bea
+
+- File: ../ARCHITECTURES/ARCHITECTURE_BUYMA.md
+- Version: 1.0.0
+- Commit: 451f92adf8c6f74f8614296635b3161433677bea
 
 ---
 
