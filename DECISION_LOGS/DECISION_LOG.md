@@ -91,4 +91,26 @@ Add new decisions at the bottom only.
 
 ---
 
+## Entry 0009
+- Date: 2026-05-13
+- Phase: Assetization / Cross-Reference
+- Verdict: Pass
+- Severity: Info
+- Reason:
+  NexusCore（fukukei23/NexusCore）におけるSTIT+IRG実践例を記録。NexusCoreは14の専門エージェントが協調するマルチエージェント開発フレームワークであり、STIT+IRGの全フェーズを内部的に実践している。
+  実践証拠:
+  - GOVERNANCE/SPEC_TEST_DRIVEN_ITERATION.md（STIT正本 v1.2）を保持
+  - docs/spec/に35のCR-NEXUS仕様書（Phase 1成果物）を配置
+  - tests/phase2/, tests/phase3/等のフェーズ駆動テスト構造
+  - GOVERNANCE/review_packets/RP-NEXUS-051_PHASE25_INDEPENDENT_REVIEW_v2.md（Phase 2.5 IRGの実施記録）
+  - DECISION_LOGS/DECISION_LOG.mdに11,859バイトの不変判断記録
+  - 4624テストケース・85%+カバレッジによる品質担保
+  Zenn記事（STIT+IRG解説記事・NexusCoreアーキテクチャ記事）間の相互リンクも確立。
+- Reference:
+  - https://github.com/fukukei23/NexusCore
+  - https://zenn.dev/fukukei23/articles/nexuscore-multi-agent-architecture
+- Diff: N/A
+
+---
+
 (Entries continue below)
