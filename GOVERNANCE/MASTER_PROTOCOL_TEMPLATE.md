@@ -1,7 +1,7 @@
 # MASTER_PROTOCOL_TEMPLATE.md
 ## Spec & Test Driven Iteration（Generic）
 
-Version: 1.0.1  
+Version: 1.1.0  
 LastUpdated: YYYY-MM-DD  
 
 ---
@@ -158,7 +158,7 @@ Phase 1 で確定した仕様とテストを満たす実装を、
 
 ---
 
-## Phase 2.5: Independent Review Gate（必須）
+## Phase 3: Independent Review Gate（必須）
 
 ### 目的
 
@@ -167,7 +167,7 @@ Phase 1 で確定した仕様とテストを満たす実装を、
 ### ルール（強制）
 
 - **別コンテキスト強制**: 開発を行ったチャットセッションや IDE 内の AI ではなく、新規の ChatGPT/Claude 等で実行すること。
-- **IDE 内自己チェックは無効**: カーソルや IDE 統合の AI による自己チェックは Phase 2.5 に該当しない。
+- **IDE 内自己チェックは無効**: カーソルや IDE 統合の AI による自己チェックは Phase 3 に該当しない。
 - **指示方法**: `GOVERNANCE/REVIEW_PACKET_TEMPLATE.md` を使用して、仕様書と実装内容（diff）を提示する。
 - **レビュアーの禁止事項**: 修正コードの提示は禁止。判定（Approve/Reject）と根拠のみを出力させる。
 
@@ -177,9 +177,16 @@ Phase 1 で確定した仕様とテストを満たす実装を、
 
 ---
 
+## Phase 4: Security Review（任意）
+
+### 目的
+
+Phase 3 を Pass した成果物に対し、**セキュリティ専門**の観点で追加検証を行う。  
+機能仕様への適合性とは別の軸で評価するため、Phase 3 とは独立して実施可能。
+
 ### 実施条件
 
-明示的に指示があった場合のみ実施する。
+明示的に指示があった場合のみ実施する（任意）。
 
 ### 視点／基準
 
@@ -195,7 +202,7 @@ Phase 1 で確定した仕様とテストを満たす実装を、
 
 ---
 
-## Phase 4: Merge & Assetization
+## Phase 5: Merge & Assetization
 
 ### 目的
 

@@ -2,7 +2,7 @@
 
 ## これは何か
 
-このリポジトリは、**「Spec & Test Driven Iteration + Phase 2.5 Independent Review Gate」** をプロジェクトの大小によらず標準化するための **テンプレリポジトリ** である。
+このリポジトリは、**「Spec & Test Driven Iteration + Phase 3 Independent Review Gate」** をプロジェクトの大小によらず標準化するための **テンプレリポジトリ** である。
 
 - 開発を開始する前に必ず本レジストリの内容を参照する
 - 「推測を排除し、仕様とテストで開発を回す」ことを強制する
@@ -16,7 +16,7 @@
 - **[MASTER_PROTOCOL_TEMPLATE.md](./GOVERNANCE/MASTER_PROTOCOL_TEMPLATE.md)** (Canonical)
   - すべての開発に共通する最上位プロトコル（仕様駆動・テスト先行）
 - **[REVIEW_PACKET_TEMPLATE.md](./GOVERNANCE/REVIEW_PACKET_TEMPLATE.md)**
-  - Phase 2.5 独立レビュー用の指示書雛形
+  - Phase 3 独立レビュー用の指示書雛形
 - **[spec/](./GOVERNANCE/spec/)** (Canonical Spec Location)
   - 各プロジェクトの最新仕様書（Phase別）はここに集約する
   - 旧 `docs/spec/` 等にファイルがある場合は「Superseded」注記を入れてここへ誘導すること
@@ -44,7 +44,7 @@
    - 仕様書を [GOVERNANCE/spec/](./GOVERNANCE/spec/) に作成し、テストコードを定義する
 2. **Phase 2: Implementation**
    - 仕様とテストを満たす実装を行う
-3. **Phase 2.5: Independent Review Gate (IRG)**
+3. **Phase 3: Independent Review Gate (IRG)**
    - **必須条件**: 開発環境から切り離された **別コンテキスト（新規チャット等）** で外部 AI (ChatGPT/Claude等) にレビューさせる
    - **IDE 内自己チェックは無効**: カーソル等の自己チェックはこのフェーズに該当しない
    - `REVIEW_PACKET_TEMPLATE.md` を使用して指示を投げる

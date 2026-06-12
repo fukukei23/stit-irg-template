@@ -1,6 +1,6 @@
 # GOVERNANCE/review_packets/
 
-This directory stores **Independent Review Packets** for Phase 2.5.
+This directory stores **Independent Review Packets** for Phase 3.
 
 ## Purpose
 - Preserve review artifacts executed in a **separate context**
@@ -11,7 +11,7 @@ This directory stores **Independent Review Packets** for Phase 2.5.
 A Review Packet is a completed instance of:
 - `GOVERNANCE/REVIEW_PACKET_TEMPLATE.md`
 
-Each packet represents **one Phase 2.5 execution**.
+Each packet represents **one Phase 3 execution**.
 
 ## Rules
 - One packet per Phase review
@@ -34,7 +34,7 @@ Each packet MUST include:
 - Test execution results
 
 ## Invalid Reviews
-The following do **NOT** qualify as Phase 2.5:
+The following do **NOT** qualify as Phase 3:
 - IDE self-checks (Cursor, Copilot, etc.)
 - Same-context AI reviews
 - Reviews without recorded Decision Log entry

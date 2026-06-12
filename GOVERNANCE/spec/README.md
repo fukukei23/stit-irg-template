@@ -6,7 +6,7 @@ under the STIT+IRG governance model.
 ## Purpose
 - Define *what must be built* before any implementation begins
 - Serve as the **Single Source of Truth (SSOT)** for Phase reviews
-- Act as the only valid reference for Phase 2.5 Independent Review
+- Act as the only valid reference for Phase 3 Independent Review
 
 ## Rules
 - All Phase Specs **MUST** be placed in this directory
@@ -29,6 +29,6 @@ When a spec is replaced:
 2. Add a `NOTE: Superseded` header to the old file
 3. Point to the new canonical spec via relative path
 
-## Phase 2.5 Reference
-Phase 2.5 reviews **MUST** reference specs from this directory only.
+## Phase 3 Reference
+Phase 3 reviews **MUST** reference specs from this directory only.
 Specs outside this directory invalidate the review.

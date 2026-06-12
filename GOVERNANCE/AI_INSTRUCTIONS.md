@@ -28,15 +28,15 @@
 ### 2.1 開発手法
 本レジストリは以下を強制します：
 - **Spec & Test Driven Iteration**
-- **Phase 2.5 Independent Review Gate（別コンテキスト必須）**
+- **Phase 3 Independent Review Gate（別コンテキスト必須）**
 
 フェーズ順序は以下以外を認めません：
-Phase 1 → Phase 2 → Phase 2.5 → Phase 4
+Phase 1 → Phase 2 → Phase 3 → Phase 4（任意）→ Phase 5
 
 ### 2.2 絶対に守るルール
 - ❌ 推測で進めない
 - ❌ 仕様に書かれていない改善を勝手に行わない
-- ❌ IDE内自己チェックを Phase 2.5 と誤認しない
+- ❌ IDE内自己チェックを Phase 3 と誤認しない
 - ❌ 絶対パス（例：[Drive]:\, [UserHome], [WSL_Path] 等）を文書に書かない
 
 ## 3. 各ディレクトリの意味（誤認禁止）
@@ -44,7 +44,7 @@ Phase 1 → Phase 2 → Phase 2.5 → Phase 4
 ### 3.1 GOVERNANCE/
 最上位ルール置き場。ここにある文書は **常に最優先**。
 - `MASTER_PROTOCOL_TEMPLATE.md`: 開発フロー・Gate定義の正本
-- `REVIEW_PACKET_TEMPLATE.md`: Phase 2.5 でのみ使用可能
+- `REVIEW_PACKET_TEMPLATE.md`: Phase 3 でのみ使用可能
 
 ### 3.2 ARCHITECTURE.md（ルート）
 - Gateの入口
@@ -60,7 +60,7 @@ Phase 1 → Phase 2 → Phase 2.5 → Phase 4
 - 判断理由・却下理由・Gate通過記録を書く場所
 - 既存エントリの編集は禁止（追記のみ）
 
-## 4. Phase 2.5（Independent Review Gate）の厳格ルール
+## 4. Phase 3（Independent Review Gate）の厳格ルール
 
 ### 4.1 あなたがやってよいこと
 - レビュー用素材の **準備**（Spec, Diff, Test結果）
@@ -71,7 +71,7 @@ Phase 1 → Phase 2 → Phase 2.5 → Phase 4
 - ❌ 同一チャット内で「レビュー済み」と宣言する
 - ❌ 修正案を「レビュー結果」として混ぜる
 
-👉 Phase 2.5 のレビューは **あなたとは別コンテキストの AI（ChatGPT / Claude 等）または人間のみ** が実施可能です。
+👉 Phase 3 のレビューは **あなたとは別コンテキストの AI（ChatGPT / Claude 等）または人間のみ** が実施可能です。
 
 ## 5. 変更・追加作業を行う場合の手順
 

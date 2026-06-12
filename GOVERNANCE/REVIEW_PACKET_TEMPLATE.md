@@ -1,7 +1,7 @@
-# Phase 2.5 Review Packet Template
+# Phase 3 Review Packet Template
 
 ## 0. Overview
-This packet is for an **Independent Review Gate (Phase 2.5)**. 
+This packet is for an **Independent Review Gate (Phase 3)**. 
 A review must be performed in a separate AI context (e.g., a fresh ChatGPT or Claude session) to ensure unbiased verification.
 
 ## 1. Reviewer Responsibility

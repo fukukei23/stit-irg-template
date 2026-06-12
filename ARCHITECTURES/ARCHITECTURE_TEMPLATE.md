@@ -25,7 +25,7 @@
 
 - **Single Source of Truth（SSOT）**として、実装・仕様・レビューの判断基準を固定する
 - 変更時の影響範囲、依存関係、責務境界を明示し、破壊的変更を防ぐ
-- Phase 2.5（独立レビュー）でのチェック対象を明確化する
+- Phase 3（独立レビュー）でのチェック対象を明確化する
 
 ---
 
@@ -40,7 +40,7 @@
 ### 1.3 成功条件（Definition of Done）
 - 仕様に定義された受け入れ条件（AC）を満たす
 - テストが定義され、再現可能なコマンドで実行できる
-- Phase 2.5 が **別コンテキスト**で Approve され、Decision Log に記録される
+- Phase 3 が **別コンテキスト**で Approve され、Decision Log に記録される
 
 ---
 
@@ -59,7 +59,7 @@
 
 ### 2.3 ガバナンス制約（必須）
 - Spec & Test Driven Iteration を採用
-- Phase 2.5 独立レビューを必須（IDE統合AI의 自己チェックは除外）
+- Phase 3 独立レビューを必須（IDE統合AI의 自己チェックは除外）
 - レビュアは修正コードを提示しない（指摘・差戻し・承認のみ）
 
 ---
@@ -166,13 +166,13 @@
 
 ---
 
-## 9. 開発フロー統合（Spec & Test + Phase 2.5）
+## 9. 開発フロー統合（Spec & Test + Phase 3）
 
 ### 9.1 Spec の正規配置
 - Canonical Spec Location:
   - `docs/00_governance/spec/PHASE_<X>_<Y>_<TITLE>_SPEC.md`
 
-### 9.2 Phase 2.5 レビュー実施
+### 9.2 Phase 3 レビュー実施
 - REVIEW_PACKET を作成し、**別コンテキスト**に投げる
 - レビュアは修正コードを提示しない
 - 判定は Approve / Reject のみ

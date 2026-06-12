@@ -28,7 +28,7 @@ AI駆動開発における、ガバナンスファーストのテンプレート
 ## 中核原則
 
 1. **仕様が実装に先行する**
-2. **独立レビューは必須（Phase 2.5）**
+2. **独立レビューは必須（Phase 3）**
 3. **IDE内自己チェックはレビューとして認めない**
 4. **GitをSingle Source of Truthとする**
 5. **すべての重要な決定を記録する**
@@ -60,7 +60,7 @@ LICENSE               # MIT License
 GOVERNANCE/           # プロトコルとAIルール
   MASTER_PROTOCOL_TEMPLATE.md   # 最上位プロトコル（仕様駆動・テスト先行）
   AI_INSTRUCTIONS.md            # AIへの指示書テンプレート
-  REVIEW_PACKET_TEMPLATE.md     # Phase 2.5 独立レビュー用指示書
+  REVIEW_PACKET_TEMPLATE.md     # Phase 3 独立レビュー用指示書
   spec/                         # 仕様書の正規配置場所
   cli/                          # CLI運用サポート
   review_packets/               # レビューパケット
@@ -109,8 +109,9 @@ STIT+IRGのPhase 1から順に進める:
 Phase 0: プロジェクト定義（PROJECT_PROFILE）
 Phase 1: 仕様とテストの定義（GOVERNANCE/spec/）
 Phase 2: 実装
-Phase 2.5: 独立レビュー（別コンテキストのAIで必須実施）
-Phase 4: マージと資産化（DECISION_LOGS/ に記録）
+Phase 3: 独立レビュー（別コンテキストのAIで必須実施）
+Phase 4: セキュリティレビュー（任意・OWASP/Red Team）
+Phase 5: マージと資産化（DECISION_LOGS/ に記録）
 ```
 
 ---
@@ -134,12 +135,17 @@ Phase 4: マージと資産化（DECISION_LOGS/ に記録）
                └──────────┬───────────┘
                           │
                ┌──────────▼───────────┐
-               │  Phase 2.5: IRG      │ ← 別コンテキストのAI
+               │  Phase 3: IRG        │ ← 別コンテキストのAI
                │  REVIEW_PACKET使用    │    IDE自己チェックは不可
                └──────────┬───────────┘
                           │
                ┌──────────▼───────────┐
-               │  Phase 4: 資産化     │
+               │  Phase 4: 任意Sec    │ ← OWASP/Red Team視点
+               │  セキュリティレビュー  │    明示指示時のみ実施
+               └──────────┬───────────┘
+                          │
+               ┌──────────▼───────────┐
+               │  Phase 5: 資産化     │
                │  DECISION_LOGS/      │
                └──────────────────────┘
 ```
@@ -148,7 +154,7 @@ Phase 4: マージと資産化（DECISION_LOGS/ に記録）
 
 ## 必須ルール
 
-Phase 2.5（別コンテキストでの独立レビュー）が完了・記録されるまで、Phase 4以降に進んではならない。これが唯一のハードゲートである。
+Phase 3（別コンテキストでの独立レビュー）が完了・記録されるまで、Phase 4以降に進んではならない。これが唯一のハードゲートである。
 
 ---
 

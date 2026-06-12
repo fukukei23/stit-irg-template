@@ -11,7 +11,7 @@ Do not edit past entries. Add new entries only.
 1. **設計・仕様・運用に関する 判断の履歴を不可逆に記録する**
 2. **「なぜそうなっているのか」を後から追跡可能にする**
 3. **人間・AI を問わず、再判断・自己正当化・暗黙変更を防止する**
-4. **Phase 2.5（Independent Review）の 正式な成果物とする**
+4. **Phase 3（Independent Review）の 正式な成果物とする**
 
 本ログに記録されていない判断は、制度上は存在しないものとして扱う。
 
@@ -19,7 +19,7 @@ Do not edit past entries. Add new entries only.
 
 - **追記のみ（Append-only）**
   - 既存エントリの修正・削除は禁止
-- **すべての Phase 2.5 の結果は必ず記録する**
+- **すべての Phase 3 の結果は必ず記録する**
 - **Reject / 差戻しも必ず記録する（重要）**
 - **判断の「是非」ではなく、「何を・なぜ判断したか」を記録する**
 
@@ -32,7 +32,7 @@ Do not edit past entries. Add new entries only.
 ### Decision ID
 - **ID**: `DL-YYYYMMDD-XXX`
 - **Date**: `YYYY-MM-DD`
-- **Phase**: `Phase X / Phase 2.5 / Governance / Architecture / Spec`
+- **Phase**: `Phase X / Phase 3 / Phase 4 / Governance / Architecture / Spec`
 - **Decision Type**:
   - `Approve`
   - `Reject`
@@ -45,7 +45,7 @@ Do not edit past entries. Add new entries only.
   - Architecture: `<path>`
   - Implementation Diff: `<git commit hash or diff ref>`
 - **Related Phase**:
-  - Phase 1 / Phase 2 / Phase 2.5 / Phase 3
+  - Phase 1 / Phase 2 / Phase 3 / Phase 4 / Phase 5
 - **Reviewer**:
   - AI (Model / Tool name)
   - or Human (Role only, personal name optional)
@@ -89,7 +89,7 @@ Severity ごとに分類する。
 - この判断で 意図的に行わなかったこと を明示する。
 - 例:
   - 認証機構の導入は今回判断対象外
-  - 自動修復ロジックは Phase 4 以降に委ねる
+  - 自動修復ロジックは Phase 5 以降に委ねる
 
 ### Reference
 - **Canonical Spec**: `<relative path>`
@@ -108,6 +108,6 @@ Severity ごとに分類する。
 
 ## 運用メモ（Optional）
 
-- Phase 2.5 の Reject は「失敗」ではない
+- Phase 3 の Reject は「失敗」ではない
 - Reject が記録されているほど、制度は健全
 - このログは 品質と判断の資産である

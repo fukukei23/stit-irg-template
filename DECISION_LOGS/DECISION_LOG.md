@@ -102,7 +102,7 @@ Add new decisions at the bottom only.
   - GOVERNANCE/SPEC_TEST_DRIVEN_ITERATION.md（STIT正本 v1.2）を保持
   - docs/spec/に35のCR-NEXUS仕様書（Phase 1成果物）を配置
   - tests/phase2/, tests/phase3/等のフェーズ駆動テスト構造
-  - GOVERNANCE/review_packets/RP-NEXUS-051_PHASE25_INDEPENDENT_REVIEW_v2.md（Phase 2.5 IRGの実施記録）
+  - GOVERNANCE/review_packets/RP-NEXUS-051_PHASE25_PHASE3_INDEPENDENT_REVIEW_v2.md（Phase 3 IRGの実施記録）
   - DECISION_LOGS/DECISION_LOG.mdに11,859バイトの不変判断記録
   - 4624テストケース・85%+カバレッジによる品質担保
   Zenn記事（STIT+IRG解説記事・NexusCoreアーキテクチャ記事）間の相互リンクも確立。

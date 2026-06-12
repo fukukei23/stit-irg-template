@@ -3,7 +3,7 @@
 This directory reserves specifications for governance automation tools.
 
 ## Scope
-- Phase 2.5 Independent Review automation
+- Phase 3 Independent Review automation
 - Review packet generation support
 - Decision Log integration
 
